@@ -84,13 +84,10 @@ h1{
 .redesSociales{
   margin-top: 50px;
 }
-.redesSociales .facebook{
-  padding-right: 40px;
+.facebook, .youtube, .twitter {
+  padding: 0px !important;
 }
-.redesSociales .twitter{
-  padding-left: 40px;
-}
-
 .redesSociales img {
   width: 45px;
+  padding: 0px !important;
 }

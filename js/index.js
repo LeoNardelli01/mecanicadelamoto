@@ -4,6 +4,7 @@ $(function(){
   var telefono = "tel:+5491136393404";
   var facebook = "https://www.facebook.com/MecanicaOficial";
   var twitter = "https://twitter.com/mecanicamoto";
+  var youtube = "https://www.youtube.com/channel/UC064exgWRJfPtSLZs7shO7Q";
 
 
   $(".btn-whatsapp").click(function(){
@@ -25,5 +26,10 @@ $(function(){
   $(".twitter").click(function(){
     $(location).attr('href', twitter);
   });
+
+  $(".youtube").click(function(){
+    $(location).attr('href', youtube);
+  });
+
 
 });
