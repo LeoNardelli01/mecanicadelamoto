@@ -14,7 +14,7 @@ src: url(../assets/Verlag/VERLAG-BOOK.OTF);
 
 
 .container-fluid{
-  background-color: #336699;
+  background-color: rgb(32, 107, 172);
   width: 100vw;
   height: 100vh;
 }
@@ -43,7 +43,7 @@ h1{
 
 }
 .btn-whatsapp {
-
+  max-width: 420px;
   width: 100%;
   height: 50px;
   background-color: white;
@@ -67,6 +67,7 @@ h1{
 
 .email, .messenger, .phone{
   background-color: white;
+  max-width: 120px;
   padding: 0px;
   display: flex;
   justify-content: center;
@@ -76,7 +77,12 @@ h1{
   height: 50px;
   box-shadow: 0px 4px 15px black;
 }
-
+.contacto{
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .contacto img{
   width: 30px;
 }
@@ -91,4 +97,34 @@ h1{
   width: 45px;
   height: 45px;
   padding: 0px !important;
+}
+
+/*RESPONSIVE*/
+@media (min-width: 400px) and (orientation: landscape) {
+  .container-fluid {
+    height: 160vh !important;
+  }
+}
+
+@media (min-height: 600px) {
+  .container-fluid{
+    height: 100vh !important;
+  }
+}
+
+/*tablet*/
+@media (min-width: 600px) {
+  .logo{
+    max-height: 250px;
+  }
+  .btn-whatsapp {
+    width: 45%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .container-fluid {
+    height: 100vh;
+  }
+
 }
