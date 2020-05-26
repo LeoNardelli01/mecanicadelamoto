@@ -7,6 +7,18 @@ $(function(){
   var youtube = "https://www.youtube.com/channel/UC064exgWRJfPtSLZs7shO7Q";
 
 
+  var typed = new Typed('#typed', {
+  // Waits 1000ms after typing "First"
+    strings: ['Cursos 100% ONLINE.^500', '¡Aprender mecánica nunca fue tan fácil!', 'Dirigido por @moreagustavo ^700', '#AprendeDesdeCasa'],
+    typeSpeed: 40,
+    showCursor: false,
+    typeSpeed: 100,
+    fadeOut: false,
+    fadeOutDelay: 500
+  });
+
+
+
   $(".btn-whatsapp").click(function(){
     $(location).attr('href',whatsapp);
   });
